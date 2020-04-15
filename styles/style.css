@@ -14,12 +14,153 @@
     min-height: 600px;
     max-height: 756px;
     /* выше установили ограничения для секции */
+    position: relative;
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+.logo {
+  height: 32px;
+  width: 183px;
+}
+
+.logo__place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 1;
+}
+
+.header__title {
+  font-size: 102px;
+  width: 730px;
+  line-height: 96px;
+  margin-left: 64px;
+  align-self: center;
+}
+
+.header__subtitle {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
     height: 568px;
     width: 568px;
+    background-color: #2f80ed;
+    position: absolute;
+    right: 0;
+    top: 64px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.two-columns {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  min-height: 366px;
+}
+
+.two-columns__brief {
+  width: 175px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent {
+  font-weight: bolder;
+}
+
+.digits {
+  padding: 100px 0;
+}
+
+.section-title {
+  width: 60%;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.section-subtitle {
+  line-height: 34px;
+  font-size: 24 px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 0 0 20px;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 20px;
+}
+
+.table__text:last-child {
+  margin: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
