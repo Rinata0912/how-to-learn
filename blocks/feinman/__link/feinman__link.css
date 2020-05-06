@@ -7,8 +7,10 @@
   right: 48px;
   top: 50%;
   color: #000;
+  transition: opacity .2s ease-in-out;
 }
 
 .feinman__link:hover {
   color: #2f80ed;
+  opacity: .6;
 }
