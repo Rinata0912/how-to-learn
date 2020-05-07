@@ -4,7 +4,7 @@
 
 
 .feinman {
-  height: 790px;
+  min-height: 790px;
   background: url(../../images/feynman.png) no-repeat;
   background-position: left bottom;
   background-size: 867px 637px;
